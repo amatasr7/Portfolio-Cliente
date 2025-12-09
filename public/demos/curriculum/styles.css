@@ -1,0 +1,196 @@
+body {
+  background: #e8f1f2;
+  font-family: sans-serif;
+}
+
+/* Marco del teléfono */
+.phone-frame {
+  width: 380px;
+  height: 680px;
+  background: #fff;
+  border-radius: 30px;
+  border: 2px solid #31493c;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Secciones tipo pantalla completa */
+.page-section {
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow-y: auto;
+}
+
+.page-section.active {
+  display: block;
+}
+
+/* Navbar inferior */
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 58px;
+  background: #001a23;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #31493c;
+}
+
+.nav-btn {
+  font-size: 24px;
+  text-decoration: none;
+  color: #b3efb2;
+  transition: color 0.2s ease;
+}
+
+.nav-btn.active {
+  color: #e8f1f2;
+}
+
+/* Iconos del home */
+.menu-icon {
+  width: 40%;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #31493c;
+}
+
+.menu-icon img {
+  width: 60px;
+  margin-bottom: 5px;
+}
+
+/* Títulos de sección */
+.title-section {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  color: #31493c;
+}
+
+/* Imagen de perfil */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #b3efb2;
+}
+
+/* Cuadrados de menú */
+.menu-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #e8f1f2;
+  border-radius: 15px;
+  padding: 20px;
+  text-decoration: none;
+  color: #31493c;
+
+  height: 150px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.menu-square:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  background: #b3efb2;
+  color: #001a23;
+}
+
+.menu-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #7a9e7e;
+}
+
+.menu-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.course-item {
+  background: #e8f1f2;
+  border: 2px solid #31493c;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-item[open] {
+  background: #b3efb2;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.course-item summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  color: #001a23;
+  font-size: 1rem;
+}
+
+.course-item summary::-webkit-details-marker {
+  display: none; /* Oculta el triángulo por defecto */
+}
+
+.course-item summary::after {
+  content: "▸"; /* Triángulo personalizado */
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.course-item[open] summary::after {
+  transform: rotate(90deg); /* Gira el triángulo cuando se abre */
+}
+
+.course-item p {
+  margin-top: 8px;
+  color: #31493c;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.aptitudes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-left: 0;
+}
+
+.aptitudes-list .list-group-item {
+  flex: 1 1 calc(50% - 8px); /* dos columnas aproximadas */
+  background: #e8f1f2;
+  border: 2px solid #31493c;
+  border-radius: 12px;
+  padding: 8px 12px;
+  color: #001a23;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+}
+.aptitudes-list .list-group-item:hover {
+  background: #b3efb2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.course-item summary i {
+  margin-right: 8px;
+  color: #001a23;
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+.contact-info {
+  font-size: 1rem;
+  color: #31493c;
+  margin-bottom: 12px;
+}

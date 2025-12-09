@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Curriculum móvil",
+    "description": "Un currículum web muy sencillo pensado para verse en un móvil. Creado usando Bootstrap y JavaScript.",
+    "demoUrl": "/demos/curriculum/index.html",
+    "imgUrl": "../src/assets/img/curriculum.png"
+  },
+  {
+    "id": 2,
+    "title": "Calculadora Web",
+    "description": "Aplicación web de una calculadora básica. Creada utilizando HTML, CSS y JavaScript.",
+    "demoUrl": "/demos/calculadora/index.html",
+    "imgUrl": "../src/assets/img/CalculadoraModerna.png"
+  },
+  {
+    "id": 3,
+    "title": "Lista de tareas",
+    "description": "Aplicación web para gestionar una lista de tareas pendientes. Permite agregar, eliminar y marcar tareas como completadas.",
+    "demoUrl": "/demos/todolist/index.html",
+    "imgUrl": "../src/assets/img/todolist.png"
+  },
+  {
+    "id": 4,
+    "title": "Reloj digital",
+    "description": "Reloj digital que muestra la hora y la fecha actualizada en tiempo real. Implementado con JavaScript para una experiencia dinámica.",
+    "demoUrl": "/demos/reloj/index.html",
+    "imgUrl": "../src/assets/img/reloj.png"
+  },
+  {
+    "id": 5,
+    "title": "Generador de colores",
+    "description": "Generador de colores aleatorios utilizando JavaScript. Cambia el color de fondo y muestra el código hexadecimal correspondiente.",
+    "demoUrl": "/demos/colores/index.html",
+    "imgUrl": "../src/assets/img/colores.png"
+  },
+  {
+    "id": 6,
+    "title": "Cronómetro deportivo",
+    "description": "Un cronómetro deportivo simple y funcional, ideal para medir tiempos en actividades físicas. Implementado con JavaScript para precisión y facilidad de uso.",
+    "demoUrl": "/demos/crono/index.html",
+    "imgUrl": "../src/assets/img/crono.png"
+  }
+]

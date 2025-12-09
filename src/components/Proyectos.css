@@ -1,0 +1,94 @@
+/* --- Variables de ejemplo --- */
+/* Si ya tienes estas variables en tu index.css, puedes borrar este bloque :root */
+:root {
+  --color-primario: #3498db; /* Un azul bonito por defecto */
+  --color-tarjetas: #f8f9fa; /* Un gris muy clarito para el fondo */
+  --color-texto: #333333;
+}
+
+/* --- Contenedor Principal --- */
+#proyectos {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra la sección en la pantalla */
+}
+
+#proyectos h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--color-primario);
+}
+
+/* --- La Galería (Grid System) --- */
+.project-gallery {
+  display: grid;
+  /* Esto crea columnas automáticas. Si la pantalla es pequeña, 1 columna. 
+     Si cabe, pone 2 o 3. El mínimo ancho de tarjeta es 300px */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* Espacio entre tarjetas */
+}
+
+/* --- La Tarjeta Individual --- */
+.project-card {
+  background-color: var(--color-tarjetas);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Flexbox vertical para que los botones siempre queden abajo */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta completa */
+.project-card:hover {
+  transform: translateY(-5px); /* Se levanta un poco */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-texto);
+}
+
+.project-card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem; /* Espacio antes de los botones */
+}
+
+/* --- Los Botones / Enlaces --- */
+.project-links {
+  display: flex;
+  gap: 1rem; /* Espacio entre los dos botones */
+}
+
+.project-links a {
+  text-decoration: none;
+  text-align: center;
+  flex: 1; /* Hace que ambos botones tengan el mismo ancho */
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 2px solid var(--color-primario);
+  color: var(--color-primario);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover en los botones (igual que tu primer ejemplo) */
+.project-links a:hover {
+  background-color: var(--color-primario);
+  color: #ffffff;
+}
+.project-image {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+  height: 200px; /* Define una altura fija para todas las imágenes */
+  object-fit: cover; /* ¡IMPORTANTE! Esto recorta la imagen para que no se vea aplastada */
+  display: block; /* Elimina espacios extra debajo de la imagen */
+  border-radius: 5px; /* Opcional: para redondear las esquinas un poco */
+}
