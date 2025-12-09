@@ -2,18 +2,16 @@ import { useState } from "react";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
-  const [estado, setEstado] = useState("inicial"); // 'inicial', 'cargando', 'exito'
+  const [estado, setEstado] = useState("inicial");
 
   const manejarEnvio = (e) => {
     e.preventDefault();
 
-    // 1. Cambiamos estado a "cargando" (simula que piensa)
     setEstado("cargando");
 
-    // 2. Simulamos una petición al servidor (espera 2 segundos)
     setTimeout(() => {
       setEstado("exito");
-      setEmail(""); // Limpiamos el input
+      setEmail("");
     }, 2000);
   };
 
@@ -28,7 +26,6 @@ export default function Newsletter() {
           formación.
         </p>
 
-        {/* Renderizado condicional: Formulario o Mensaje de Éxito */}
         {estado === "exito" ? (
           <div className="success-message">
             <h3>¡Gracias por suscribirte!</h3>
